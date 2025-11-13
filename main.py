@@ -69,3 +69,13 @@ def read_students(*, session: Session = Depends(get_session)):
 @app.get("/")
 async def root():
     return {"message": "¡Bienvenido a la API de Registro de Estudiantes!"}
+
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # o lista de dominios específicos
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],)

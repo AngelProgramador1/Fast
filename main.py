@@ -25,7 +25,7 @@ def create_db_and_tables():
 
 # --- Lógica de la Aplicación FastAPI ---
 app = FastAPI(
-    title="API de Registro de Estudiantes",
+    title="API de Registro de Estudiantess",
     description="Un backend simple con FastAPI y SQLModel para gestionar estudiantes."
 )
 
